@@ -19,26 +19,21 @@ $resVets = mysqli_query($conn, $queryVets);
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Sistema PetShop</title>
+  <title>Sistema PetShop &copy; (BETA)</title>
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <!-- jQuery -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="/petshop/assets/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="/petshop/assets/css/main.css">
+  <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
 
-  <!-- Exemplo de cor primary #AEB404 (redefinindo var BS) -->
-  <style>
-    :root {
-      --bs-primary: #AEB404; /* cor solicitada */
-    }
-  </style>
 </head>
 <body>
 <div class="container mt-3">
 
-  <h3 class="mb-3">Bem-vindo(a), <?php echo $_SESSION['vet_nome']; ?>!</h3>
-  <a href="logout.php" class="btn btn-danger mb-3">Logout</a>
+  <div class="header-dashboard">  
+    <h3 class="mb-3">Bem-vindo(a), <?php echo $_SESSION['vet_nome']; ?>!</h3>
+    <a href="logout.php" class="btn btn-primary mb-3">Logout</a>
+  </div>
 
   <!-- Nav Tabs -->
   <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -82,10 +77,7 @@ $resVets = mysqli_query($conn, $queryVets);
               <td><?php echo $row['nome_vet']; ?></td>
               <td><?php echo $row['status_vivo_morto']; ?></td>
               <td>
-                <button type="button" class="btn btn-primary btn-sm"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modalAnimal"
-                        onclick="editarAnimal(<?php echo $row['id_animal']; ?>)">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalAnimal" onclick="editarAnimal(<?php echo $row['id_animal']; ?>)">
                   Editar
                 </button>
               </td>
@@ -94,8 +86,8 @@ $resVets = mysqli_query($conn, $queryVets);
           </tbody>
         </table>
         <!-- Ações em massa -->
-        <button type="submit" name="acao" value="excluir" class="btn btn-danger">Excluir selecionados</button>
-        <button type="submit" name="acao" value="trocar_status" class="btn btn-warning">Trocar status (vivo/morto)</button>
+        <button type="submit" name="acao" value="excluir" class="btn btn-primary">Excluir selecionados</button>
+        <button type="submit" name="acao" value="trocar_status" class="btn btn-primary">Trocar status (vivo/morto)</button>
       </form>
     </div>
 
@@ -133,7 +125,7 @@ $resVets = mysqli_query($conn, $queryVets);
           <?php endwhile; ?>
           </tbody>
         </table>
-        <button type="submit" name="acao" value="excluir" class="btn btn-danger">Excluir selecionados</button>
+        <button type="submit" name="acao" value="excluir" class="btn btn-primary">Excluir selecionados</button>
       </form>
     </div>
 
@@ -171,7 +163,7 @@ $resVets = mysqli_query($conn, $queryVets);
           <?php endwhile; ?>
           </tbody>
         </table>
-        <button type="submit" name="acao" value="excluir" class="btn btn-danger">Excluir selecionados</button>
+        <button type="submit" name="acao" value="excluir" class="btn btn-primary">Excluir selecionados</button>
       </form>
     </div>
 
@@ -397,6 +389,11 @@ $resVets = mysqli_query($conn, $queryVets);
     </div>
   </div>
 </div>
+
+  <!-- jQuery (deve vir antes do Bootstrap JS) -->
+  <script src="/petshop/assets/js/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="/petshop/assets/js/bootstrap.min.js"></script>
 
 <script>
 // Selecionar/deselecionar todos
