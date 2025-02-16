@@ -25,8 +25,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Login - PetShop</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <title>Login - PetShop &copy; (BETA)</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="/petshop/assets/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="/petshop/assets/css/main.css">
+  <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
 </head>
 <body class="bg-light">
 
@@ -55,6 +59,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jQuery (deve vir antes do Bootstrap JS) -->
+<script src="/petshop/assets/js/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="/petshop/assets/js/bootstrap.min.js"></script>
 </body>
 </html>
