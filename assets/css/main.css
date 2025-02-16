@@ -1,0 +1,20 @@
+:root {
+    --bs-primary: #AEB404; /* cor solicitada */
+}
+.btn-primary{
+    background-color: #AEB404 !important;
+    color: aliceblue !important;
+    border-color: #AEB404 !important;
+}
+.header-dashboard{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link{
+    color: #AEB404 !important;
+    text-decoration: none !important;
+}
+/* .fa-sign-out-alt{
+    font-size: 100px !important;
+    color: black !important;
+} */
