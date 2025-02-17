@@ -34,29 +34,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body class="bg-light">
 
-<div class="container">
-    <div class="row mt-5">
-        <div class="col-sm-4 offset-sm-4">
-            <h3 class="text-center mb-3">Login do Veterinário</h3>
-            <?php if(isset($erro)): ?>
-            <div class="alert alert-danger">
-                <?php echo $erro; ?>
-            </div>
-            <?php endif; ?>
+<div class="container d-flex align-items-center justify-content-center min-vh-100">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="form-container">
+        <h3 class="text-center mb-3">Login do Veterinário</h3>
+        
+        <?php if(isset($erro)): ?>
+          <div class="alert alert-danger">
+            <?php echo $erro; ?>
+          </div>
+        <?php endif; ?>
 
-            <form method="post" action="">
-                <div class="mb-3">
-                    <label for="usuario" class="form-label">Usuário</label>
-                    <input type="text" name="usuario" id="usuario" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                    <label for="senha" class="form-label">Senha</label>
-                    <input type="password" name="senha" id="senha" class="form-control" required>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Entrar</button>
-            </form>
-        </div>
+        <form method="post" action="">
+          <div class="mb-3">
+            <label for="usuario" class="form-label">Usuário</label>
+            <input type="text" name="usuario" id="usuario" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="password" name="senha" id="senha" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Entrar</button>
+        </form>
+      </div>
     </div>
+  </div>
 </div>
 
 <!-- jQuery (deve vir antes do Bootstrap JS) -->

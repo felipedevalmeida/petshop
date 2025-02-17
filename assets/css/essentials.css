@@ -177,7 +177,7 @@ a, a:focus, a:hover, a:active {
 /**	03. Selection
 *************************************************** **/
 ::selection {
-	color:#000;
+	color:#ccc;
 	background:#ccc;
 	text-shadow:none;
 }
@@ -2211,7 +2211,7 @@ figure {
 			border-radius: 6px;
 }
 .modal-header {
-	background-color:#333;
+	background-color: #AEB404;
 }
 .modal-header  button,
 h4.modal-title {

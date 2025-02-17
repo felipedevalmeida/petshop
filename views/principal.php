@@ -26,6 +26,39 @@ $resVets = mysqli_query($conn, $queryVets);
   <link rel="stylesheet" href="/petshop/assets/css/main.css">
   <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
 
+  <!-- Libraries Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- ContentBuilder -->
+	<link href="/petshop/assets/minimalist-blocks/content.css" rel="stylesheet" type="text/css" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/petshop/assets/css/bootstrap.min.css?v=4" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+	<link href="/petshop/assets/css/essentials.css?v=4" rel="stylesheet" type="text/css" />
+    <link href="/petshop/assets/lib/animate/animate.min.css" rel="stylesheet">
+    <!-- <link href="/petshop/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
+	<link href="/petshop/assets/plugins/owl-carousel/owl.pack.css" rel="stylesheet" type="text/css" />
+    <link href="/petshop/assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+	<link href="/petshop/assets/css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="/petshop/assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+    <!-- Template Stylesheet -->
+    <link href="/petshop/assets/css/style.css?v=76" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </head>
 <body>
 <div class="container mt-3">
@@ -177,7 +210,7 @@ $resVets = mysqli_query($conn, $queryVets);
     <div class="modal-content">
       <form id="formAnimal" method="post" action="controllers/animais_controller.php" enctype="multipart/form-data">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalAnimalLabel">Cadastro de Animal</h5>
+          <h4 class="modal-title" id="modalAnimalLabel">Cadastro de Animal</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
@@ -272,7 +305,7 @@ $resVets = mysqli_query($conn, $queryVets);
     <div class="modal-content">
       <form id="formTutor" method="post" action="controllers/tutores_controller.php" enctype="multipart/form-data">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalTutorLabel">Cadastro de Tutor</h5>
+          <h4 class="modal-title" id="modalTutorLabel">Cadastro de Tutor</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">
@@ -328,7 +361,7 @@ $resVets = mysqli_query($conn, $queryVets);
     <div class="modal-content">
       <form id="formVet" method="post" action="controllers/veterinarios_controller.php" enctype="multipart/form-data">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalVetLabel">Cadastro de Veterinário</h5>
+          <h4 class="modal-title" id="modalVetLabel">Cadastro de Veterinário</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
         <div class="modal-body">

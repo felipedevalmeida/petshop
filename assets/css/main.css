@@ -18,3 +18,14 @@
     font-size: 100px !important;
     color: black !important;
 } */
+
+.btn-close{
+    --bs-btn-close-color: #000;
+}
+
+.form-container {
+    border: 1px solid #ccc;   /* Borda cinza clara */
+    border-radius: 8px;      /* Cantos arredondados */
+    padding: 40px 40px 40px 40px;           /* Espaçamento interno */
+    background-color: #fff;  /* Fundo branco (opcional) */
+  }
